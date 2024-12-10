@@ -1553,3 +1553,18 @@ color: #20A6FF;
     display: none;
   }
 }
+
+.encuesta__aprox-opc {
+display: none;
+}
+
+@media (max-width: 768px) {
+  .encuesta__aprox-opc {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #20A6FF;
+  }
+}
