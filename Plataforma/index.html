@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contenedor encuesta">
+
+    <header class="encuesta__header">
+        <img width="93" src="../assets/img/logo.png" alt="">
+        <h1 class="encuesta__title">Califica tu experiencia en Plataforma</h1>
+    </header>
+
+    <main class="encuesta__main">
+        <div class="encuesta__item encuesta__box--list">
+            <div>
+                <div class="encuesta__indicador">
+                    <p class="encuesta__pregunta encuesta__pregunta--more">1. Según tu reciente experiencia, en una escala del 0 al 10, ¿Qué tan probable es que recomiende el servicio de la oficina a familiares y amigos?</p>
+                </div>
+
+                <div class="encuesta__box">
+                    <div class="encuesta__puntuacion">
+                        <div class="encuesta__puntuacion--min">
+                            <div class="encuesta__puntuacion--item">1</div>
+                        </div>
+                        <div class="encuesta__puntuacion--item">2</div>
+                        <div class="encuesta__puntuacion--item">3</div>
+                        <div class="encuesta__puntuacion--item">4</div>
+                        <div class="encuesta__puntuacion--item">5</div>
+                        <div class="encuesta__puntuacion--item">6</div>
+                        <div class="encuesta__puntuacion--item">7</div>
+                        <div class="encuesta__puntuacion--item">8</div>
+                        <div class="encuesta__puntuacion--item">9</div>
+                        <div class="encuesta__puntuacion--max">
+                            <div class="encuesta__puntuacion--item">10</div>
+                        </div>
+                    </div>
+
+                    <p class="banbif-text-low-gray">Califica del 0 al 10, donde 0 es 'no recomendaría' y 10 es 'sí recomendaría'.</p>
+                </div>
+
+
+
+            </div>
+
+            <div>
+                <p class="encuesta__pregunta encuesta__pregunta--second">¿Por qué motivo nos brindas esa calificación?</p>
+                <textarea class="encuesta__textarea" name="" id=""></textarea>
+            </div>
+        </div>
+
+        <div class="encuesta__box--list--mobile">
+            <div class="encuesta__indicador">
+                <p class="encuesta__pregunta encuesta__pregunta--more">2. En general ¿Qué tan satisfecho te encuentras con la oficina que te atendió?</p>
+            </div>
+            
+            <div class="encuesta__bancaInternetRadio">
+                <div class="bancaInternetRadio__titles">
+                   <div class="bancaInternetRadio__title bancaInternetRadio__title--first">
+                        <img class="bancaInternetRadio__emogi bancaInternetRadio__emogi--1" src="../assets/img/muy-insatisfecho.svg" alt="Nada satisfecho">
+                        <p class="bancaInternetRadio__title--des">Nada satisfecho</p>
+                   </div>
+                   <div class="bancaInternetRadio__title">
+                        <img class="bancaInternetRadio__emogi bancaInternetRadio__emogi--2" src="../assets/img/poco-satisfecho.svg" alt="Poco satisfecho">
+                        <p class="bancaInternetRadio__title--des">Poco Satisfecho</p>
+                    </div>
+                   <div class="bancaInternetRadio__title">
+                        <img class="bancaInternetRadio__emogi bancaInternetRadio__emogi--3" src="../assets/img/satisfecho.svg" alt="Satisfecho">
+                        <p class="bancaInternetRadio__title--des">Satisfecho</p>
+                    </div>
+                    <div class="bancaInternetRadio__title">
+                        <img class="bancaInternetRadio__emogi bancaInternetRadio__emogi--4" src="../assets/img/muy-satisfecho.svg" alt="Satisfecho">
+                        <p class="bancaInternetRadio__title--des">Muy Satisfecho</p>
+                    </div>
+                    <div class="bancaInternetRadio__title bancaInternetRadio__title--last">
+                        <img class="bancaInternetRadio__emogi bancaInternetRadio__emogi--4" src="../assets/img/totalmente-satisfecho.svg" alt="Totalmente satisfecho">
+                        <p class="bancaInternetRadio__title--des">Totalmente Satisfecho</p>
+                   </div>
+                </div>
+                <div class="bancaInternetRadio__inputs">
+                    <div>
+                        <input class="bancaInternetRadio__input" type="radio" name="bancaInternet" id="bancaInternet1">
+                        <span class="radio-mark"></span>
+                    </div>
+                    <div>
+                        <input class="bancaInternetRadio__input" type="radio" name="bancaInternet" id="bancaInternet2">
+                        <span class="radio-mark"></span>
+                    </div>
+                    <div>
+                        <input class="bancaInternetRadio__input" type="radio" name="bancaInternet" id="bancaInternet3">
+                        <span class="radio-mark"></span>
+                    </div>
+                    <div>
+                        <input class="bancaInternetRadio__input" type="radio" name="bancaInternet" id="bancaInternet4">
+                        <span class="radio-mark"></span>
+                    </div>
+                    <div>
+                        <input class="bancaInternetRadio__input" type="radio" name="bancaInternet" id="bancaInternet5">
+                        <span class="radio-mark"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="encuesta__aprox">
+                <p>Nada <br>
+                    satisfecho</p>
+                <p>Totalmente <br>
+                    satisfecho</p>
+            </div>
+        </div>
+
+        <div>
+            <p class="encuesta__pregunta">¡Nos encantaría que nos detalles tu puntaje!</p>
+            <textarea class="encuesta__textarea" name="" id=""></textarea>
+        </div>
+        <div>
+            <p class="encuesta__pregunta">3. ¿Cómo te hace sentir BanBif?</p>
+            <textarea class="encuesta__textarea" name="" id=""></textarea>
+        </div>
+
+        <div class="encuesta__box--submit">
+            <a class="encuesta__submit" href="#">Enviar</a>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
