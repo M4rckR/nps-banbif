@@ -355,7 +355,7 @@ template {
 
 @font-face {
   font-family: 'Lato';
-  src: url('../assets/fonts/Lato-Regular.ttf') format('truetype');
+  src: url('../../app/assets/fonts/Lato-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -422,11 +422,10 @@ p {
 }
 
 .encuesta {
-margin-top: 40px;
+margin-top: 16px;
 }
 
 .encuesta__header {
-  margin-top: 32px;
   background-color: var(--color-bg-cyan);
   border-radius: 8px;
   display: flex;
@@ -447,6 +446,8 @@ display: none;
   .encuesta__range-container {
     display: block;
   }
+
+
   
 .encuesta {
 margin-top: 20px;
@@ -477,12 +478,12 @@ margin-top: 20px;
 }
 
 @media (max-width: 768px) {
-.encuesta__puntuacion {
-  display: grid;
-  grid-template-columns: repeat(10,1fr);
-  gap: 4px;
-}
-}
+  .encuesta__puntuacion {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 4px;
+  }
+  }
 
 .encuesta-text-mobile {
 font-size: 12px;
@@ -490,27 +491,8 @@ line-height: 16px;
 color: rgba(0, 68, 112, 0.50);
 padding-left: 16px;
 padding-top: 6px;
-}
+} 
 
-.encuesta__puntuacion--min::after {
-  content: 'No \A recomendaría';
-  white-space: pre;
-  display: block;
-  padding-top: 4px;
-  font-size: 12px;
-  text-align: center;
-  color: var(--color-bg-cyan);
-}
-
-.encuesta__puntuacion--max::after {
-  content: 'Si \A recomendaría';
-  white-space: pre;
-  display: block;
-  padding-top: 4px;
-  font-size: 12px;
-  text-align: center;
-  color: var(--color-bg-cyan);
-}
 
 @media (max-width: 768px) {
 .encuesta__puntuacion--min::after {
@@ -520,20 +502,34 @@ padding-top: 6px;
   text-align: center;
   color: var(--color-bg-cyan);
 }
+
 .encuesta__puntuacion--max::after {
   content: '';
+  white-space: pre;
+  display: block;
+  padding-top: 4px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-bg-cyan);
 }
 }
 
 
 .encuesta__puntuacion--item {
-background-color: rgba(32, 166, 255, 0.10);
-color: var(--color-bg-cyan);
-font-size: 24px;
-padding: 10px 16px;
-border-radius: 5px;
-cursor: pointer;
-text-align: center;
+  background-color: rgba(32, 166, 255, 0.10);
+  color: var(--color-bg-cyan);
+  font-size: 24px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
 .encuesta__puntuacion--item,
@@ -542,6 +538,8 @@ text-align: center;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
+  height: auto;
+  width: auto;
 }
 }
 
@@ -618,6 +616,7 @@ gap: 32px;
   gap: 6px;
 }
 
+
 .encuesta__pregunta--second {
   padding-bottom: 20px;
 }
@@ -681,6 +680,7 @@ display: none;
 }
 }
 @media (max-width: 768px) {
+
 
 .bancaInternetRadio__title--des {
   display: none;
@@ -985,6 +985,22 @@ color: var(--color-text);
 
 @media (min-width: 768px) {
   .banbif-text-low-gray {
+    display: none;
+  }
+}
+
+.encuesta__cardinales {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+  width: 670px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .encuesta__cardinales {
     display: none;
   }
 }
